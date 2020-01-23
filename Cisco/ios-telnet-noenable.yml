@@ -6,8 +6,8 @@
     ## For new community submitted templates visit: https://github.com/rconfig/rConfig-templates
 
 main:
-  name: "Cisco IOS - TELNET - No Enable"
-  desc: "Cisco IOS TELNET based connection without enable mode"
+  name: "Dlink DGS-3120-24SC- TELNET - No Enable"
+  desc: "Dlink DGS-3120-24SC TELNET based connection without enable mode"
 connect:
   # connection timeout in seconds
   timeout: 60
@@ -36,14 +36,14 @@ config:
     # Disable config scrolling/ paging command. on/off
     paging: on
     # Disable config scrolling/ paging command. Leave blank, or set as required. Must place command in quotations
-    pagingCmd: "terminal length 0"
+    pagingCmd: "show config current_config"
     # re-enable config scrolling/ paging command. Leave blank, or set as required. Must place command in quotations
-    resetPagingCmd: "terminal length 40"
+    resetPagingCmd: "terminal length 50"
     # Set pager prompt. Must place command in quotations
     pagerPrompt: "--More--"
     # Set pager prompt key-stroke. Must place command in quotations
     pagerPromptCmd: " "
     # Save configuration command. Leave blank, or set as required. Must be in quotes
-    saveConfig: "wr mem"
+    saveConfig: "save  all"
     # Set exit command. Must place command in quotations
     exitCmd: "quit"
